@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!--Estilo adicionais-->
+    <link rel="stylesheet" href="estilo-A.css">
+
+    <title>Pratica</title>
+  </head>
+  <body>
+    <header> <!--Cabeçalho-->
+        <nav id="menu" class="navbar navbar-expand-sm navbar-light bg-warning">
+            <div class="container">
+                <a href="" class="navbar-brand">
+                    LOGO
+                </a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#menu-principal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu-principal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Ajuda</a>
+                        </li>
+                        <div style="width: 1px; background: #000;" class="m-2"></div>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Entrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link">Registrar-se</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> <!--Fim Cabeçalho-->
+
+    <section> <!-- Area dos cards-->
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="https://source.unsplash.com/random/600x400">
+                        <div class="card-body">
+                            <h1>Titulo do card</h1>
+                            <h2>Descrição</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui...</p>
+                            <a href="" class="btn btn-outline-primary">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="https://source.unsplash.com/random/600x400">
+                        <div class="card-body">
+                            <h1>Titulo do card</h1>
+                            <h2>Descrição</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui...</p>
+                            <a href="" class="btn btn-outline-primary">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="https://source.unsplash.com/random/600x400">
+                        <div class="card-body">
+                            <h1>Titulo do card</h1>
+                            <h2>Descrição</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui...</p>
+                            <a href="" class="btn btn-outline-primary">Ler mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section> <!--Area de edição-->
+        <div class="container mt-4">
+            <h1 style="text-align: center;">Editor</h1>
+            <div style="text-align: center;" class="row text-light bg-info p-4">
+                <div class="col-md-4">
+                    <h2>Barra de navegação</h2>
+                    <div style="text-align: center;">
+                        <p>cor de fundo:</p>
+                        <button onclick="mudarCorMenu('#007bff')" class="btn btn-primary"></button>
+                        <button onclick="mudarCorMenu('#6c757d')" class="btn btn-secondary"></button>
+                        <button onclick="mudarCorMenu('#28a745')" class="btn btn-success"></button>
+                        <button onclick="mudarCorMenu('#dc3545')" class="btn btn-danger"></button>
+                        <button onclick="mudarCorMenu('#ffc107')" class="btn btn-warning"></button>
+                        <button onclick="mudarCorMenu('#f8f9fa')" class="btn btn-light"></button>
+                        <button onclick="mudarCorMenu('#343a40')" class="btn btn-dark"></button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h2>Cards</h2>
+                    <p>cor de fundo:</p>
+                    <button onclick="mudarCorCard('#007bff')" class="btn btn-primary"></button>
+                    <button onclick="mudarCorCard('#6c757d')" class="btn btn-secondary"></button>
+                    <button onclick="mudarCorCard('#28a745')" class="btn btn-success"></button>
+                    <button onclick="mudarCorCard('#dc3545')" class="btn btn-danger"></button>
+                    <button onclick="mudarCorCard('#ffc107')" class="btn btn-warning"></button>
+                    <button onclick="mudarCorCard('#f8f9fa')" class="btn btn-light"></button>
+                    <button onclick="mudarCorCard('#343a40')" class="btn btn-dark"></button>
+
+                    <p>Cor de texto:</p>
+                    <button onclick="mudarCorTexto('#007bff')" class="btn btn-primary"></button>
+                    <button onclick="mudarCorTexto('#6c757d')" class="btn btn-secondary"></button>
+                    <button onclick="mudarCorTexto('#28a745')" class="btn btn-success"></button>
+                    <button onclick="mudarCorTexto('#dc3545')" class="btn btn-danger"></button>
+                    <button onclick="mudarCorTexto('#ffc107')" class="btn btn-warning"></button>
+                    <button onclick="mudarCorTexto('#f8f9fa')" class="btn btn-light"></button>
+                    <button onclick="mudarCorTexto('#343a40')" class="btn btn-dark"></button>
+                    
+                </div>
+                <div class="col-md-4">
+                    <h2>Fundo da Página</h2>
+                    <div style="text-align: center;">
+                        <p>cor de fundo:</p>
+                        <input onchange="mudarFundo()" type="color" name="color" id="color">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+
+<script src="codigo.js"></script>
+</html>
